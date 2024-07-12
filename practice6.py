@@ -53,17 +53,19 @@
 
 # Write a Book class with attributes for title, author, and year.
 
-class Book:
-  def __init__(self, title, author, year):
-    self.title = title
-    self.author = author
-    self.year = year
+# class Book:
+#   def __init__(self, title, author, year):
+#     self.title = title
+#     self.author = author
+#     self.year = year
 
-  def __str__(self):
-    return f"Book(title='{self.title}', author='{self.author}', author='{self.year}')"
+#   def __str__(self):
+#     return f"Book(title='{self.title}', author='{self.author}', author='{self.year}')"
 
-  def __repr__(self):
-    return self.__str__()
+#   def __repr__(self):
+#     return self.__str__()
 
-book = Book("example", "Guy", 2019)
-print(book)
+# book = Book("example", "Guy", 2019)
+# print(book)
+
+
