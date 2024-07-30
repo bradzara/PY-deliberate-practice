@@ -41,3 +41,18 @@ def mutate_string(string, position, character):
   return string
 
 print(mutate_string(string, position, character))
+
+# Output the integer number indicating the total number of occurrences of the substring in the original string.
+
+string = "ABCDCDC"
+substring = "CDC"
+
+def count_substring(string, substring):
+    count = 0
+    sub_len = len(substring)
+    for i in range(len(string) - sub_len + 1):
+        if string[i:i + sub_len] == substring:
+            count += 1
+    return count
+
+print(count_substring(string, substring))
