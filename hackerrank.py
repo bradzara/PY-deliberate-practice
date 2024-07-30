@@ -27,3 +27,17 @@ def print_full_name(first, last):
   return f"Hello {first} {last}! You just delved into python."
 
 print(print_full_name(first, last))
+
+# Read a given string, change the character at a given index and then print the modified string.
+
+string = "abracadabra"
+position = 5
+character = "k"
+
+def mutate_string(string, position, character):
+  l = list(string)
+  l[position] = character
+  string = "".join(l)
+  return string
+
+print(mutate_string(string, position, character))
