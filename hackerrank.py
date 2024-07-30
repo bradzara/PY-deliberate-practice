@@ -1,9 +1,9 @@
-n = 3
+#Swap the cases
 
-number = ""
-counter = 1
-while counter <= n:
-    number += str(counter)
-    counter += 1
+string = "This is A RANdom stRiNG"
 
-print(number)
+def swap_case(s):
+  return s.swapcase()
+
+print(swap_case(string))
+
