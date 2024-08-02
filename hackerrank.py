@@ -83,3 +83,15 @@ print(any(c.isdigit() for c in s))
 print(any(c.islower() for c in s))
 print(any(c.isupper() for c in s))
 
+
+number = int(input("Enter a number: "))
+
+def increment_or_reset(n):
+    if 0 <= n <= 8:
+        return n + 1
+    elif n == 9:
+        return 0
+    else:
+        return -1
+    
+print(increment_or_reset(5))
