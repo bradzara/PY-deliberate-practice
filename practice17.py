@@ -38,3 +38,16 @@ while index < len(array):
   hash[array[index]["id"]] = array[index]
   index += 1
 print(hash)
+
+# Convert a string into a hash with keys for each letter in the string and values for the number of times the letter appears in the string. For example, "bookkeeper" becomes {"b" => 1, "o" => 2, "k" => 2, "e" => 3, "p" => 1, "r" => 1}.
+
+string = "bookkeeper"
+letter_frequencies = {}
+index = 0
+while index < len(string):
+  letter = string[index]
+  if letter not in letter_frequencies:
+    letter_frequencies[letter] = 0
+  letter_frequencies[letter] += 1
+  index += 1
+print(letter_frequencies)
