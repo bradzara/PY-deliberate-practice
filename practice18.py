@@ -9,3 +9,9 @@ print(first + " " + last)
 first = "John"
 last = "Smith"
 print(f"{first} {last}")
+
+# Write a program that asks the user to input a word. If the word is "marco", print "polo".
+
+word = input("Input a word: ")
+if word == "marco":
+  print("polo")
