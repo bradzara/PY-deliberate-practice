@@ -30,3 +30,10 @@ print(new_numbers)
 numbers = [1, 2, 3]
 new_numbers = [number + 7 for number in numbers]
 print(new_numbers)
+
+# Start with an array of strings and create a new array with each string's length.
+# For example, ["hello", "goodbye"] becomes [5, 7].
+
+strings = ["hello", "goodbye"]
+strings_count = [len(string) for string in strings]
+print(strings_count)
