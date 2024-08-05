@@ -44,3 +44,25 @@ print(strings_count)
 people = [{"name": "Alice", "age": 27}, {"name": "Blane", "age": 16}]
 ages = [age["age"] for age in people]
 print(ages)
+
+# Start with an array of numbers and create a new array with only the numbers less than 20.
+# For example, [2, 32, 80, 18, 12, 3] becomes [2, 18, 12, 3].
+
+numbers = [2, 32, 80, 18, 12, 3]
+new_numbers = [number for number in numbers if number < 20]
+print(new_numbers)
+
+# Start with an array of strings and create a new array with only the strings that start with the letter "w".
+# For example, ["winner", "winner", "chicken", "dinner"] becomes ["winner", "winner"].
+
+strings = ["winner", "winner", "chicken", "dinner"]
+new_strings = [string for string in strings if string[0] == "w"]
+print(new_strings)
+
+# Start with an array of hashes and create a new array with only the hashes with names shorter than 6 letters (from the :name key).
+# For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}, {name: "book", price: 4}].
+
+items = [{"name": "chair", "price": 100}, {"name": "pencil", "price": 1}, {"name": "book", "price": 4}]
+new_items = [item for item in items if len(item["name"]) < 6]
+print(new_items)
+
