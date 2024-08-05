@@ -37,3 +37,10 @@ print(new_numbers)
 strings = ["hello", "goodbye"]
 strings_count = [len(string) for string in strings]
 print(strings_count)
+
+# Start with an array of hashes and create a new array of number values from each hash's :age key.
+# For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16]
+
+people = [{"name": "Alice", "age": 27}, {"name": "Blane", "age": 16}]
+ages = [age["age"] for age in people]
+print(ages)
