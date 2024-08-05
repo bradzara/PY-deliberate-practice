@@ -66,3 +66,31 @@ items = [{"name": "chair", "price": 100}, {"name": "pencil", "price": 1}, {"name
 new_items = [item for item in items if len(item["name"]) < 6]
 print(new_items)
 
+# Start with an array of numbers and compute the sum of all the numbers.
+# For example, [5, 10, 8, 3] becomes 26.
+
+numbers = [5, 10, 8, 3]
+sum = 0
+for number in numbers:
+  sum += number
+print(sum)
+
+# Start with an array of hashes and compute the sum of the prices (from the :price key).
+# For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes 105.
+
+items = [{"name": "chair", "price": 100}, {"name": "pencil", "price": 1}, {"name": "book", "price": 4}]
+sum = 0
+for item in items:
+  sum += item["price"]
+print(sum)
+
+# Start with an array of numbers and compute the the minimum number.
+# For example, [5, 10, 8, 3, 9] becomes 3.
+
+numbers = [5, 10, 8, 3, 9]
+smallest = numbers[0]
+for number in numbers:
+  if number < smallest:
+    smallest = number
+print(smallest)
+
