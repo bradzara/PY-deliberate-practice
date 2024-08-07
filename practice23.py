@@ -21,3 +21,4 @@ b = [random.randint(1, 20) for _ in range(random.randint(10, 15))]
 # print(matches)
 
 print(list(set(a) & set(b)))
+
